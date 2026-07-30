@@ -1,0 +1,56 @@
+name: BanglaLeaderboard
+version: '${version}'
+main: dev.banglaleaderboard.BanglaLeaderboard
+api-version: '1.21'
+description: Production-ready PlaceholderAPI-powered leaderboard plugin for Paper servers
+author: NoTXGameR
+website: https://github.com/NoTXGameR/BanglaLeaderboard
+
+softdepend:
+  - PlaceholderAPI
+  - Vault
+  - LuckPerms
+  - Essentials
+
+commands:
+  bl:
+    description: BanglaLeaderboard main command
+    usage: /bl <subcommand>
+    aliases: [banglaleaderboard, leaderboard]
+    permission: banglaleaderboard.admin
+
+permissions:
+  banglaleaderboard.admin:
+    description: Full admin access to BanglaLeaderboard
+    default: op
+    children:
+      banglaleaderboard.create: true
+      banglaleaderboard.delete: true
+      banglaleaderboard.reload: true
+      banglaleaderboard.refresh: true
+      banglaleaderboard.import: true
+      banglaleaderboard.export: true
+
+  banglaleaderboard.create:
+    description: Create leaderboards
+    default: op
+
+  banglaleaderboard.delete:
+    description: Delete leaderboards
+    default: op
+
+  banglaleaderboard.reload:
+    description: Reload plugin configuration
+    default: op
+
+  banglaleaderboard.refresh:
+    description: Manually refresh leaderboard data
+    default: op
+
+  banglaleaderboard.import:
+    description: Import leaderboard data
+    default: op
+
+  banglaleaderboard.export:
+    description: Export leaderboard data
+    default: op

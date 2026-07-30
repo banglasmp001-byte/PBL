@@ -1,0 +1,25 @@
+# BanglaLeaderboard - Advanced Settings
+# Only edit if you know what you're doing!
+
+performance:
+  # Max players to scan per leaderboard refresh
+  # Set to -1 for unlimited (not recommended for large servers)
+  max-players-scan: 1000
+
+  # Maximum async threads for refresh operations
+  max-async-threads: 4
+
+  # Minimum interval between refreshes regardless of config (seconds)
+  min-refresh-interval: 30
+
+  # Whether to use offline player data
+  use-offline-players: true
+
+placeholders:
+  # Fallback string when no entry exists at a position
+  empty-slot-name: "Empty"
+  empty-slot-value: "0"
+  empty-slot-formatted: "-"
+
+  # String returned when player is not in leaderboard
+  not-ranked: "N/A"

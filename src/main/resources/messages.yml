@@ -1,0 +1,55 @@
+# BanglaLeaderboard - Messages Configuration
+# Supports MiniMessage format: https://docs.advntr.dev/minimessage/
+
+prefix: "<gradient:#00C9FF:#92FE9D>[BL]</gradient> "
+
+# General
+no-permission: "<red>You don't have permission to do that."
+player-only: "<red>This command can only be run by players."
+unknown-command: "<red>Unknown subcommand. Use <yellow>/bl help</yellow> for help."
+reload-success: "<green>✓ BanglaLeaderboard reloaded successfully!"
+reload-failed: "<red>✗ Reload failed. Check console for errors."
+
+# Leaderboard management
+leaderboard-created: "<green>✓ Leaderboard <yellow>{name}</yellow> created successfully!"
+leaderboard-deleted: "<green>✓ Leaderboard <yellow>{name}</yellow> deleted."
+leaderboard-not-found: "<red>✗ Leaderboard <yellow>{name}</yellow> not found."
+leaderboard-already-exists: "<red>✗ Leaderboard <yellow>{name}</yellow> already exists."
+leaderboard-enabled: "<green>✓ Leaderboard <yellow>{name}</yellow> enabled."
+leaderboard-disabled: "<yellow>◉ Leaderboard <white>{name}</white> disabled."
+leaderboard-renamed: "<green>✓ Leaderboard renamed from <yellow>{old}</yellow> to <yellow>{new}</yellow>."
+leaderboard-refreshed: "<green>✓ Leaderboard <yellow>{name}</yellow> refreshed."
+all-refreshed: "<green>✓ All leaderboards refreshed."
+
+# Info command
+info-header: "<gradient:#00C9FF:#92FE9D>━━━━━━ Leaderboard Info ━━━━━━</gradient>"
+info-name: " <aqua>Name: <white>{name}"
+info-enabled: " <aqua>Enabled: <white>{enabled}"
+info-placeholder: " <aqua>Placeholder: <white>{placeholder}"
+info-sort: " <aqua>Sort: <white>{sort}"
+info-interval: " <aqua>Interval: <white>{interval}s"
+info-top-size: " <aqua>Top Size: <white>{size}"
+info-last-update: " <aqua>Last Update: <white>{time}"
+info-cached-entries: " <aqua>Cached Entries: <white>{count}"
+
+# List command
+list-header: "<gradient:#00C9FF:#92FE9D>━━━━━━ Leaderboards ({count}) ━━━━━━</gradient>"
+list-entry-enabled: " <green>● <white>{name} <gray>({placeholder})"
+list-entry-disabled: " <red>○ <gray>{name} <dark_gray>({placeholder}) [DISABLED]"
+list-empty: " <gray>No leaderboards created yet. Use <yellow>/bl create</yellow>"
+
+# Backup & Restore
+backup-success: "<green>✓ Backup created: <yellow>{file}"
+backup-failed: "<red>✗ Backup failed. Check console."
+restore-success: "<green>✓ Restored from: <yellow>{file}"
+restore-failed: "<red>✗ Restore failed. Check console."
+restore-not-found: "<red>✗ Backup file not found: <yellow>{file}"
+
+# Import & Export
+export-success: "<green>✓ Exported to: <yellow>{file}"
+import-success: "<green>✓ Imported {count} leaderboard(s)."
+import-failed: "<red>✗ Import failed. Check console."
+
+# Help
+help-header: "<gradient:#00C9FF:#92FE9D>━━━━━━ BanglaLeaderboard Help ━━━━━━</gradient>"
+help-footer: "<gray>Plugin by <white>NoTXGameR</white> | UBMC STUDIO"

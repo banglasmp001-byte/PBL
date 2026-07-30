@@ -1,0 +1,98 @@
+# BanglaLeaderboard - Main Configuration
+# Plugin by NoTXGameR | UBMC STUDIO
+
+# ==========================================
+# GENERAL SETTINGS
+# ==========================================
+general:
+  # Debug mode - shows extra logs
+  debug: false
+
+  # Auto-create example leaderboard on first run
+  create-example: true
+
+  # Timezone for time-based displays
+  timezone: "Asia/Dhaka"
+
+# ==========================================
+# CACHE SETTINGS
+# ==========================================
+cache:
+  # Enable caching system
+  enabled: true
+
+  # Default cache duration (seconds)
+  default-duration: 300
+
+  # Maximum cached entries per leaderboard
+  max-entries: 100
+
+  # Save cache to disk on shutdown
+  persist: true
+
+# ==========================================
+# UPDATE SETTINGS
+# ==========================================
+update:
+  # Default refresh interval for all leaderboards (seconds)
+  # Can be overridden per leaderboard
+  default-interval: 300
+
+  # Async update processing
+  async: true
+
+  # Batch size when querying PlaceholderAPI per tick
+  batch-size: 10
+
+  # Delay between batches (ticks)
+  batch-delay: 1
+
+# ==========================================
+# DISPLAY SETTINGS
+# ==========================================
+display:
+  # Medal prefix for top 3
+  medal-1: "🥇"
+  medal-2: "🥈"
+  medal-3: "🥉"
+  medal-default: "✦"
+
+  # Default format for combined placeholder %bl_<name>_top_<pos>%
+  # Available: {medal} {rank} {name} {value} {formatted_value}
+  combined-format: "{medal} {name} - {formatted_value}"
+
+  # Number formatting
+  number-format:
+    enabled: true
+    # Suffixes: K, M, B, T
+    use-suffixes: true
+    decimal-places: 2
+
+# ==========================================
+# BACKUP SETTINGS
+# ==========================================
+backup:
+  # Auto backup on shutdown
+  auto-backup: true
+
+  # Maximum backup files to keep
+  max-backups: 10
+
+  # Backup folder name
+  folder: "backups"
+
+# ==========================================
+# LOGGING
+# ==========================================
+logging:
+  # Log level: INFO, WARNING, SEVERE
+  level: "INFO"
+
+  # Log to file
+  file-logging: true
+
+  # Log folder
+  folder: "logs"
+
+  # Max log file size (MB)
+  max-file-size: 10
